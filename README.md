@@ -1,5 +1,7 @@
 # edit-sarif
 
+> ℹ️ This repository has moved to [`advanced-security/tag-sarif`](https://github.com/advanced-security/tag-sarif/)
+
 Edits a SARIF file.
 
 Currently:
@@ -53,7 +55,7 @@ jobs:
         output: sarif-results
 
     - name: Edit SARIF
-      uses: advanced-security/edit-sarif@main
+      uses: aegilops/edit-sarif@main
       with:
         tags: custom-tag
         input: sarif-results/${{ matrix.language }}.sarif
